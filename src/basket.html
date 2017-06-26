@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>
+        Order Basket
+    </title>
+	
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+	<link rel="icon" type="image/jpg" href="menuimage3.jpg">
+
+</head>
+
+<body>
+
+
+
+
+<div id="content">
+            <div class="container">
+
+            <!-- start -->
+
+            <div class="intro">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html"><span class="glyphicon glyphicon-home" style="font-size: 30px;">Home   </span></a>
+              <a class="navbar-brand" href="Menu.html"><span class="glyphicon glyphicon-th" style="font-size: 30px;">Menu</span></a>
+             
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+             
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="Contact.html"><span class="glyphicon glyphicon-user" style="font-size: 30px;">Contact</span></a></li>
+              </ul>
+            </div>
+            </div>
+          </nav>  
+            <div class="container text-center">
+            <br>
+            <br>
+              
+           
+            </div>
+            </div>
+
+
+<!-- end  -->
+
+
+                
+                <div class="col-md-9" id="basket" style="margin-top: 50px">
+
+                    <div class="box">
+
+                        <form method="post" action="review_order.html">
+
+                            <h1>Food Cart</h1>
+                            <p class="text-muted">You currently have 3 item(s) in your cart.</p>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Product</th>
+                                            <th>Quantity</th>
+                                            <th>Unit price</th>
+                                            <th colspan="2">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="cheeseburger.html">
+                                                    <img src="images/cheeseburger.jpg" alt="cheeseburger">
+                                                </a>
+                                            </td>
+                                            <td><a href="cheeseburger.html">Cheese Burger </a>
+                                            </td>
+                                            <td>
+                                                <input type="number" value="2" class="form-control">
+                                            </td>
+                                            <td>$10.00</td>
+                                            <td id="totalPrice">$20.00</td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="chickenburger.html">
+                                                    <img src="images/chickenburger.jpg" alt="Chiken Burger">
+                                                </a>
+                                            </td>
+                                            <td><a href="chickenburger.html">Chicken Burger</a>
+                                            </td>
+                                            <td>
+                                                <input type="number" value="1" class="form-control">
+                                            </td>
+                                            <td>$10.00</td>
+                                            <td>$10.00</td>
+                          
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th colspan="5">Total</th>
+                                            <th colspan="2">$30.00</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                            </div>
+
+                            <div class="box-footer">
+                                <div class="pull-left">
+                                    <a href="menu.html" class="btn btn-default"><i class="fa fa-chevron-left"></i> Go back to Menu</a>
+                                </div>
+                                <div class="pull-right">
+                                    <button class="btn btn-default"><i class="fa fa-refresh"></i> Update basket</button>
+                                    <button type="submit" class="btn btn-primary">Proceed to checkout <i class="fa fa-chevron-right"></i>
+									
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+
+                    <div class="row same-height-row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="box same-height">
+                                <h3>You may also like these products</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="product same-height">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="hamburger.html">
+                                                <img src="images/hamburger.png" alt="Ham Burger" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="product same-height">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="fries.html">
+                                                <img src="images/fries.png" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+      
+                        </div>
+
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="product same-height">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="veggie-burger.html">
+                                                <img src="images/veggie-burger.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                
+                            </div>
+                 
+                        </div>
+
+                    </div>
+
+
+                </div>
+				
+                <div class="col-md-3" style="margin-top: 50px">
+                    <div class="box" id="order-summary">
+                        <div class="box-header">
+                            <h3>Order summary</h3>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Order subtotal</td>
+                                        <th>$30.00</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Tax</td>
+                                        <th>$3.00</th>
+                                    </tr>
+                                    <tr class="total">
+                                        <td>Total</td>
+                                        <th>$33.00</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+
+                    <div class="box">
+                        <div class="box-header">
+                            <h4>Coupon code</h4>
+                        </div>
+                        <p class="text-muted">Please enter the coupon below.</p>
+                        <form>
+                            <div class="input-group">
+
+                                <input type="text" class="form-control">
+
+                                <span class="input-group-btn">
+
+					<button class="btn btn-default"><i class="fa fa-refresh"></i> Submit</button>
+
+				    </span>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+		
+	
+  <script src="pm3-group20.js">
+	</script>	
+		
+	
+</body>
+
+</html>	

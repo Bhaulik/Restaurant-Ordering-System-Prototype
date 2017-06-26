@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Veggie Burger</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="icon" type="image/jpg" href="menuimage3.jpg">	
+</head>
+
+<body>
+
+ <div class="intro">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="menu.html"><span class="glyphicon glyphicon-home" style="font-size: 30px;">Menu</span></a>
+     
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart" style="font-size: 30px;">Checkout</span></a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>  
+    <div class="container text-center">
+    <br>
+    <br>
+      
+   
+    </div>
+    </div>
+
+    
+    <a href="/checkout.html" >
+      <p id="totalPrice" >$0.00<p>
+    </a>
+  </div>
+  
+  <div id="container" >
+    
+	
+    <div id="mainItem" >
+      
+      <h2 id="itemTitle" >Veggie Burger</h2>
+      
+      <img id="itemPhoto" src="images/veggie-burger.jpg" />
+      
+      <p id="itemPrice" >$13.00</p>
+	  
+      
+      <div id="itemPageOrdering" >
+        <h5>Quantity:</h5>
+        <img id="plusSign" onclick="addToOrder('Veggie Burger', 13.00)" src="images/icon-plus-sign.png" />
+        <p id="veggieQuantity">0</p>
+        <img id="minusSign" onclick="removeFromOrder('Veggie Burger', -13.00);" src="images/icon-minus-sign.png" />
+      </div>   
+	  
+	  <div id="description" >
+		<h4 id="descriptionTitle">Description</h4>
+        <p id="itemDescription">A succulent beef patty topped with cheese.</p>
+      </div>
+	  
+	</div>
+	
+	
+    
+    <div id="similarItems" >
+      
+      <h3 id="similarItemTitle">Similar Dishes</h3>
+	  
+	  <a class="similarLink" href="cheeseburger.html" >
+        <img class="similarItemPhoto" src="images/cheeseburger.jpg" />
+      </a>
+      
+      <a class="similarLink" href="chickenburger.html" >
+        <img class="similarItemPhoto" src="images/chickenburger.jpg" />
+      </a>
+      
+      <a class="similarLink" href="hamburger.html" >
+        <img class="similarItemPhoto" src="images/hamburger.png" />
+      </a>
+	  
+      <a class="similarLink" href="fries.html" >
+        <img class="similarItemPhoto" src="images/fries.png" />
+      </a>
+      
+    </div>
+    
+  </div>
+  
+  <script src="pm3-group20.js">
+	</script>
+  
+</body>
+
+</html>

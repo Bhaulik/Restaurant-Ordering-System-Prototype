@@ -1,0 +1,122 @@
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+
+.box {
+  background: #fff;
+  margin: 0 0 30px;
+  border: solid 1px #e6e6e6;
+ 
+background-repeat: no-repeat;
+	background-color: #f5f5f0;
+	background-position: center;
+ box-sizing: border-box;
+  padding: 30px;
+   position: static;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+.box .box-header {
+  background: #f7f7f7;
+  margin: -20px -20px 20px;
+  padding: 20px;
+  border-bottom: solid 1px #eeeeee;
+}
+
+.box .box-footer {
+  background: #f7f7f7;
+  margin: 30px -20px -20px;
+  padding: 20px;
+  border-top: solid 1px #eeeeee;
+}
+.box .box-footer:after {
+  content: " ";
+  display: table;
+}
+.box .box-footer:after {
+  clear: both;
+}
+@media (max-width: 991px) {
+  .box .box-footer .btn {
+    margin-bottom: 20px;
+  }
+}
+
+#content .product .flip-container,
+#content .product .front,
+#content .product .back {
+  width: 100%;
+}
+#content .product .flipper {
+  position: relative;
+}
+#content .product .front,
+#content .product .back {
+  position: absolute;
+}
+
+
+#content .product .text h3 {
+  font-size: 18px;
+  font-weight: 700;
+  height: 39.6px;
+  text-align: center;
+  overflow: hidden;
+}
+#content .product .text h3 a {
+  color: #555555;
+}
+#content .product .text p.price {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 300;
+}
+#content .product .text p.price del {
+  color: #999999;
+}
+
+#content #order-summary table {
+  margin-top: 20px;
+}
+#content #order-summary table td {
+  color: #999999;
+}
+#content #order-summary table tr.total td,
+#content #order-summary table tr.total th {
+  font-size: 18px;
+  color: #555555;
+  font-weight: 700;
+}
+#content #checkout .table tbody tr td,
+#content #basket .table tbody tr td,
+#content #customer-order .table tbody tr td {
+  vertical-align: middle;
+}
+#content #checkout .table tbody tr td input,
+#content #basket .table tbody tr td input,
+#content #customer-order .table tbody tr td input {
+  width: 50px;
+  text-align: right;
+}
+#content #checkout .table tbody tr td img,
+#content #basket .table tbody tr td img,
+#content #customer-order .table tbody tr td img {
+  width: 50px;
+}
+#content #checkout .table tfoot,
+#content #basket .table tfoot,
+#content #customer-order .table tfoot {
+  font-size: 18px;
+}
+
+/* scaffolding */
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #f0f0f0;
+}
+

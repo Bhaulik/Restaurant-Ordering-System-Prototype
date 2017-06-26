@@ -1,0 +1,389 @@
+<title>Menu Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="plusminustoggle.js"></script>
+  <link rel="icon" type="image/jpg" href="menuimage3.jpg">
+  <style>
+
+  body{
+    background-image: url("menuimage3.jpg");
+  }
+
+
+  div.intro{
+    text
+  }
+
+  .item {
+  width: 31%;
+  background: white;
+  margin: 1%;
+  padding: 10px;
+  border: 10px solid black;
+
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+
+h3.category {
+  font-size: 36px;
+  margin-bottom: 0;
+  font-family: Castellar;
+  color: green;
+
+}
+li{
+  font-family: Helvetica;
+  font-size: 18px;
+  border: 2px solid;
+
+}
+
+/*styles for adding the plus and minus button*/
+#myform {
+    text-align: left;
+    padding: 0px;
+    border-spacing: 5px, 5px;
+    margin: 2%;
+}
+.qty {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+input.qtyplus { width:30px; height:30px;}
+input.qtyminus { width: 30px; height:30px;}
+
+  </style>
+  
+</head>
+<body>
+
+
+    <div class="intro">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="../index.html"><span class="glyphicon glyphicon-home" style="font-size: 30px;">Home</span></a>
+     
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart" style="font-size: 30px;">Checkout</span></a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>  
+    <div class="container text-center">
+    <br>
+    <br>
+      
+   
+    </div>
+    </div>
+    <!-- end of the introductory part of the web page -->
+    
+    <!-- add buttons here ..the home button and the checkout button-->
+     <h1 style="font-size: 60px; border: 15px solid black; font-family: Castellar;margin-top: 70px; margin-right: 5px; margin-left: 5px" align="center">Menu</h1>
+    <!-- body of the web page -->
+    <div class="container" >
+      <!-- this is for STARTERS -->
+     
+      
+
+       <div class="item">
+      <h3 class="category" align="center">Starters</h3>
+      <br>
+      <ol>
+
+        <li><a href="chickenburger.html">Chicken Burger<form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity' />
+        <input type='text' name='quantity' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity' />
+       $13.00
+        </form></a>
+
+        </li>
+
+       <li><a href="fries.html">Fries  <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity1' />
+        <input type='text' name='quantity1' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity1' />
+       $5.00 
+        </form></a></li>
+        <li><a href="hamburger.html">Hamburger  <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity2' />
+        <input type='text' name='quantity2' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity2' />
+        $13.00
+        </form></a></li>
+        <li><a href="cheeseburger.html">Cheese Burger    <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity3' />
+        <input type='text' name='quantity3' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity3' />
+       $13.00
+        </form></a></li>
+        <li><a href="veggie-burger.html">Vegetable Burger  <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity4' />
+        <input type='text' name='quantity4' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity4' />
+       $11.00
+        </form></a></li>
+       <li><a href="#">Manchurion <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity5' />
+        <input type='text' name='quantity5' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity5' />
+       $10.50
+        </form></a></li>
+      </ol>
+      </div>  
+
+  
+      <!-- THIS IS FOR CHEF'S SPECIAL -->
+      <div class="item">
+    <h3 class="category" align="center">Chef's Special</h3>
+    <br>
+      <ol>
+      <li><a href="">Orange Beef  <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity6' />
+        <input type='text' name='quantity6' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity6' />
+       $30.00
+        </form></a></li>
+      <li><a href="">Hot Crispy Beef  <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity6b' />
+        <input type='text' name='quantity6b' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity6b' />
+       $25.00
+        </form><a></li>
+      <li><a href="">Crispy egg plant <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity7' />
+        <input type='text' name='quantity7' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity7' />
+       $12.00
+        </form></a></li>
+      <li><a href="">Mu shu pork <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity8' />
+        <input type='text' name='quantity8' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity8' />
+       $17.00
+        </form></a></li>
+      <li><a href="#">Manor shrimp  <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity9' />
+        <input type='text' name='quantity9' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity9' />
+       $50.00
+        </form></a></li>
+      <li><a href="#">Ahola wraps  <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity10' />
+        <input type='text' name='quantity10' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity10' />
+       $10.00
+        </form></a></li>
+      <li><a href="#">Mandrin Rolls <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity11' />
+        <input type='text' name='quantity11' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity11' />
+       $10.50
+        </form></a></li>
+      <li><a href="#">Sweet Sour Pork  <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity12' />
+        <input type='text' name='quantity12' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity12' />
+       $9.00
+        </form></a></li>
+      <!-- add a more button that shows more dishes -->
+      </ol>
+    </div>
+
+    <div class="item">
+     <h3 class="category" align="center" >Sea Food</h3>
+     <br>
+      <ol>
+      <li><a href="#">Zersty prawns  <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity13' />
+        <input type='text' name='quantity13' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity13' />
+       $40.00
+        </form></a></li>
+      <li><a href="#">Manch Beef  <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity14a' />
+        <input type='text' name='quantity14a' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity14a' />
+       $20.00
+        </form></a></li>
+      <li><a href="#">Snow Peas  <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity14b' />
+        <input type='text' name='quantity14b' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity14b' />
+       $25.00
+        </form></a></li>
+      <li><a href="#">Lobster Rolls <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity14c' />
+        <input type='text' name='quantity14c' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity14c' />
+        $40.00
+        </form></a></li>
+      <li><a href="#">Fried Oysters  <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity15a' />
+        <input type='text' name='quantity15a' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity15a' />
+       $35.00
+        </form></a></li>
+      </ol>
+   
+     </div>
+ 
+
+  <!-- lower items -->
+    <div class="item">
+      <h3 class="category" align="center">Vegetarian</h3>
+      <ol>
+      <li><a href="#">Vegetarian Core Soup<form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity16' />
+        <input type='text' name='quantity16' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity16' />
+       $30.00
+        </form></a></li>
+      <li><a href="#">Veg Pakoras <form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity17' />
+        <input type='text' name='quantity17' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity17' />
+       $10.00
+        </form></a></li>
+      <li><a href="#">Stir fried Mixed Vegs<form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity18' />
+        <input type='text' name='quantity18' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity18' />
+       $25.00
+        </form></a></li>
+      <li><a href="#">yellow bird<form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity19' />
+        <input type='text' name='quantity19' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity19' />
+       $17.00
+        </form></a></li>
+      <li><a href="#">Fried Brocolli<form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity21' />
+        <input type='text' name='quantity21' value='0' class='qty' />
+         <input type='button' value='+' class='qtyplus' field='quantity21' />
+       $10.00
+        </form></a></li>
+      <li><a href="#">Buddha Delight<form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity22' />
+        <input type='text' name='quantity22' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity22' />
+       $15.00
+        </form></a></li>
+      <li><a href="#">Mushroom burger<form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity23' />
+        <input type='text' name='quantity23' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity23' />
+        $10.00
+        </form></a></li>
+      </ol>
+      <!-- add a see more  -->
+    </div>
+    <div class="item">
+      <h3 class="category" align="center">Beverages</h3>
+      <ol>
+      <li><a href="#">Coke<form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity24' />
+        <input type='text' name='quantity24' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity24' />
+        $5.00
+        </form></a></li>
+      <li><a href="#">Root beer<form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity25' />
+        <input type='text' name='quantity25' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity25' />
+        $5.00
+        </form></a></li>
+      <li><a href="#">Crush<form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity26' />
+        <input type='text' name='quantity26' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity26' />
+        $5.00
+        </form></a></li>
+      <li><a href="#">Bubble tea<form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity27' />
+        <input type='text' name='quantity27' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity27' />
+        $5.00
+        </form></a></li>
+      <li><a href="#">Pinacolada shake<form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity28' />
+        <input type='text' name='quantity28' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity28' />
+        $5.00
+        </form></a></li>
+      <!-- add a see more -->
+      <!-- bar drinks stuff -->
+      </ol>
+    </div>
+    <div class="item">
+      <h3 class="category" align="center">Bbq</h3>
+      <ol>
+      <li><a href="#">Beef<form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity29' />
+        <input type='text' name='quantity29' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity29' />
+        $5.00
+        </form></a></li>
+      <li><a href="#">Chicken<form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity31' />
+        <input type='text' name='quantity31' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity31' />
+        $15.00
+        </form></a></li>
+      <li><a href="#">Hickorycombo<form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity32' />
+        <input type='text' name='quantity32' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity32' />
+        $10.00
+        </form></a></li>
+      <li><a href="#">Pork sandwich<form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity33' />
+        <input type='text' name='quantity33' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity33' />
+        $10.00
+        </form></a></li>
+      <li><a href="#">Veggie bbq<form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity34' />
+        <input type='text' name='quantity34' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity34' />
+        $10.00
+        </form></a></li>
+      <li><a href="#">Steak bbq<form id='myform' method='POST' action='#'>
+        <input type='button' value='-' class='qtyminus' field='quantity35' />
+        <input type='text' name='quantity35' value='0' class='qty' />
+       <input type='button' value='+' class='qtyplus' field='quantity35' />
+        $10.00
+        </form></a></li>
+      </ol>
+    </div>
+
+     </div>
+
+  <footer>
+    <p style="align-content: centre; background-color: yellow">*Please notify management in case of any issues. Thank you!</p>
+
+  </footer>
+
+</body>
+</html>
+
